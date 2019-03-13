@@ -54,3 +54,5 @@ for prediction in results.predictions:
 ```
 
 This can be made much nice with a URL entry box rather than a url image being added directly into the code.
+
+You can download the full [Notebook here](CustomVisionAI.ipynb)
