@@ -30,11 +30,11 @@ iterationid="Insert Iteration ID"
 
 You need to add the keys from CustomVision Model
 
-![CustomVisionModel](Images\CustomVision.png)
+![CustomVisionModel](Images/CustomVision.png)
 
 And The iterationID - This is the training iteration under the prediction link on customvision.ai
 
-![InterationID](Images\IterationID.png)
+![InterationID](Images/IterationID.png)
 
 Finally We want to display the result of a provided image
 
