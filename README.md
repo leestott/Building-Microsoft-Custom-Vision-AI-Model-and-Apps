@@ -1,6 +1,9 @@
 # Getting started building a custom vision indexer for a selection of images. 
 
-So you want to build a image classifer for a hackathon or project well there tools such as [Microsoft Custom Vision AI](http://www.customvision.ai) but to make thes eeffective you need to upload and tag images for the model to be successfully trained. Using Bing Image CLI you can download the images directly to your local machine, then add or remove any other images to fine tune your image stock.  Then you can use the Custom Vision Model CLI to create a new model, upload the images and correctly label each one.  Further more, the model is trained and then made available for running quick tests - to see if you're classifer is returning the expected results.
+So you want to build a image classifer for a hackathon or project well there tools such as [Microsoft Custom Vision AI](http://www.customvision.ai) but to make these effective you need to upload and tag images for the model to be successfully trained. Using Bing Image CLI you can download the images directly to your local machine, then add or remove any other images to fine tune your image stock.  Then you can use the Custom Vision Model CLI to create a new model, upload the images and correctly label each one.  Further more, the model is trained and then made available for running quick tests - to see if you're classifer is returning the expected results.
+
+
+You can read more and see a variety of demos at [docs.microsoft](https://docs.microsoft.com/en-us/azure/cognitive-services/custom-vision-service/
 
 # Task 1. Grab some images
 
