@@ -8,10 +8,10 @@ To retrieve your Custom Vision API key start here: http://www.customvision.ai
 
 Click on the Setting Cog on the top right
 
-![settings](https://github.com/leestott/Building-Microsoft-Custom-Vision-AI-Model-and-Apps/tree/master/Images/customvision1.jpg)
+![settings](../Images/customvision.jpg)
 
 Then copy the key required
-![settings](https://github.com/leestott/Building-Microsoft-Custom-Vision-AI-Model-and-Apps/tree/master/Images/customvision.jpg)
+![settings](../Images/customvision.jpg)
 
 ## CLI Arguments
 
