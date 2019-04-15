@@ -8,7 +8,7 @@ To retrieve your Custom Vision API key start here: http://www.customvision.ai
 
 Click on the Setting Cog on the top right
 
-![settings](../Images/customvision.jpg)
+![settings](../Images/customvision1.jpg)
 
 Then copy the key required
 ![settings](../Images/customvision.jpg)
@@ -42,7 +42,3 @@ CustomVisionCLI.exe -k yourcustomvisionkey -p "folder location" -n projectname -
 ```
 CustomVisionCLI.exe -k bb******************** -p "c:\pics\legs\leg1.jpg" -n hotdogs -q
 ```
-
-
-
-
