@@ -57,7 +57,44 @@ Example
 CustomVisionCLI.exe -k yourkey -p c:\photos\mushroom -n Mushroom
 ```
 
+If you had multiple folder of images for the example you simply use "" to group the folders import
+
+```
+CustomVisionCLI.exe -k yourkey -p "c:\photos\mushroom" -n Mushroom
+```
+
 This will upload all of the remaining images above, labelling them at the same time and will then train the model.  
+
+Example
+
+```
+CustomVisionCLI.exe -k bb********************** -p "c:\pics" -n hotdogs
+Creating Custom Vision Project: hotdogs
+Scanning subfolders within: c:\pics
+Creating Tag: Hotdog
+Creating Tag: legs
+Uploading: c:\pics\Hotdog images...
+Uploaded 50/50 images successfully from c:\pics\Hotdog
+Uploading: c:\pics\legs images...
+Uploaded 44/44 images successfully from c:\pics\legs
+Training model
+Model status: Training
+Model status: Training
+Model status: Training
+Model status: Training
+Model status: Training
+Model status: Training
+Model status: Training
+Model status: Training
+Model status: Training
+Model status: Training
+Model status: Training
+Model status: Training
+Model status: Completed
+Iteration: be14fd6c-0447-467e-b9e9-21a260a01d49 set as default
+Done.
+Total time: 00:01:32.9939707
+```
 
 For a more details on the CLI see [CustomVisionCLI](/CustomVisionCLI/)
 
@@ -65,13 +102,23 @@ For a more details on the CLI see [CustomVisionCLI](/CustomVisionCLI/)
 
 After a couple of minutes you can then test the new classifier with a previously unseen image.  You can either do this in the [Customvision.ai portal](http://www.customvision.ai), or again from the CLI tool 
 
-The command from the tool is 
+The command from the tool is
 CustomVisionCLI.exe -k _yourkey_ -p _imagetestlocation_" -n _customvisionName_ -
 
 Example
 
-CustomVisionCLI.exe -k yourkey -p c:\dump\unseen\mushroom.jpg" -n Mushroom -q
+CustomVisionCLI.exe -k yourkey -p "c:\dump\unseen\mushroom.jpg" -n Mushroom -q
 
+Example output
+
+```
+CustomVisionCLI.exe -k bb**************** -p "c:\pics\legs\leg1.jpg" -n hotdogs -q
+Custom Vision Quick test: hotdogs with image c:\pics\legs\leg1.jpg
+Tag: legs Probability: 0.999996245
+Tag: Hotdog Probability: 4.059012E-08
+Done.
+Total time: 00:00:06.7100040
+```
 # Task 4. Building a TensorFlow Light Model .NetCore App
 
 Cross platform CLI to run a pre-trained model exported from [CustomVision.ai](https://CustomVision.ai) in the Tensorflow format for image classification using the [TensorFlowSharp library](https://github.com/migueldeicaza/TensorFlowSharp).

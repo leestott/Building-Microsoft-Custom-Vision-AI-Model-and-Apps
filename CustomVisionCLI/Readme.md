@@ -4,7 +4,14 @@ Cross platform CLI to provision a new Microsoft Custom Vision model using images
 To learn more about Microsoft Cognitive Custom Vision Service, please see here: https://azure.microsoft.com/en-gb/services/cognitive-services/custom-vision-service/
 
 ## Custom Vision API Key
-To retrieve your Custom Vision API key start here: https://azure.microsoft.com/en-gb/try/cognitive-services/
+To retrieve your Custom Vision API key start here: http://www.customvision.ai 
+
+Click on the Setting Cog on the top right
+
+![settings](https://github.com/leestott/Building-Microsoft-Custom-Vision-AI-Model-and-Apps/tree/master/Images/customvision1.jpg)
+
+Then copy the key required
+![settings](https://github.com/leestott/Building-Microsoft-Custom-Vision-AI-Model-and-Apps/tree/master/Images/customvision.jpg)
 
 ## CLI Arguments
 
@@ -29,9 +36,12 @@ CustomVisionCLI.exe -k *yourcustomvisionapikey* -n CucumberOrCourgette -p c:\pho
 Quickly test your model with a single image to see the outcome prediction
 
 ```
-CustomVisionCLI.exe -k *yourcustomvisionapikey* -n CucumberOrCourgette -p c:\photos\unseen\cucumber.jpg -q
+CustomVisionCLI.exe -k yourcustomvisionkey -p "folfer location" -n projectname -q
 ```
 
+```
+CustomVisionCLI.exe -k bb******************** -p "c:\pics\legs\leg1.jpg" -n hotdogs -q
+```
 
 
 
