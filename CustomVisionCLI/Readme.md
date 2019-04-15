@@ -31,6 +31,43 @@ Upload all subfolders of images under the c:\\photos\ path.  Folder names are co
 ```
 CustomVisionCLI.exe -k *yourcustomvisionapikey* -n CucumberOrCourgette -p c:\photos
 ```
+Uploading multiple tags
+
+So after using BingCLI to download multiple tags
+
+Example 
+```
+BingImageCLI.exe -k *yourbingapikey* -s "Microsoft Clippy, paperclip, office" -p c:\photos
+```
+
+You can upload these using the following command 
+
+```
+CustomVisionCLI.exe -k *yourbingapikey* -s -p "c:\photos" -n MSOffice
+```
+
+Output Example of multi tag
+
+```
+Creating Custom Vision Project: MSOffice 
+Scanning subfolder within c:\photos
+Creating Tag: Microsoft Clippy
+Creating Tag: paperclip
+Creating Tag: office
+Uploading: c:\photos\Microsoft Clippy, paperclip, office images....
+Training Model
+Model status: Training
+Model status: Training
+Model status: Training
+Model status: Training
+Model status: Training
+Model status: Training
+Model status: Training
+Model status: Completed
+Iteration: be14fd6c-0447-467e-b9e9-21a260a01d49 set as default
+Done.
+Total time: 00:01:32.9939707
+```
 
 ### Model quick test
 Quickly test your model with a single image to see the outcome prediction

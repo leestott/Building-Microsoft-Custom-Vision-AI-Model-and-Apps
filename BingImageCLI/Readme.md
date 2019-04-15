@@ -33,6 +33,9 @@ BingImageCLI.exe -k *yourbingapikey* -s Clippy -p c:\photos
 ```
 BingImageCLI.exe -k *yourbingapikey* -s "Microsoft Clippy, paperclip, office" -p c:\photos
 ```
+This will create a folder in c:\photos\Microsoft Clippy, paperclip, office 
+
+This folder will contain all the images downloaded.
 
 ### Return first 50 results only
 ```
