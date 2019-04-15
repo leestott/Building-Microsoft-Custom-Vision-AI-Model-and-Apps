@@ -70,8 +70,7 @@ CustomVisionCLI.exe -k _yourkey_ -p _imagetestlocation_" -n _customvisionName_ -
 
 Example
 
-CustomVisionCLI.exe -k yourkey -p c:\dump\unseen\mushroom.jpg" -n Mushroom -
-
+CustomVisionCLI.exe -k yourkey -p c:\dump\unseen\mushroom.jpg" -n Mushroom -q
 
 # Task 4. Building a TensorFlow Light Model .NetCore App
 
