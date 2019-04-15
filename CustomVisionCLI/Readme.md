@@ -36,7 +36,7 @@ CustomVisionCLI.exe -k *yourcustomvisionapikey* -n CucumberOrCourgette -p c:\pho
 Quickly test your model with a single image to see the outcome prediction
 
 ```
-CustomVisionCLI.exe -k yourcustomvisionkey -p "folfer location" -n projectname -q
+CustomVisionCLI.exe -k yourcustomvisionkey -p "folder location" -n projectname -q
 ```
 
 ```
