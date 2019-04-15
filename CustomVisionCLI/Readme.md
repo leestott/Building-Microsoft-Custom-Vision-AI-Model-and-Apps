@@ -28,9 +28,11 @@ Then copy the key required
 ### Model creation, image upload & training
 Upload all subfolders of images under the c:\\photos\ path.  Folder names are comma separated to specify multiple tags eg:
 "c:\photos\cucumber,vegetable" will upload all images in the folder: "c:\photos\cucumber,vegetable" and tag them with both "cucumber" and "vegetable" tags.
+
 ```
-CustomVisionCLI.exe -k *yourcustomvisionapikey* -n CucumberOrCourgette -p c:\photos
+CustomVisionCLI.exe -k *yourcustomvisionapikey* -n CucumberOrCourgette -p "c:\photos"
 ```
+
 Uploading multiple tags
 
 So after using BingCLI to download multiple tags
