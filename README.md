@@ -87,4 +87,4 @@ Create a Custom Vision classifer in 30 seconds starting from nothing.  Using bot
 
 ![Demo](Images/Bing%20Image%20and%20Custom%20Vision%20CLI.gif)
 
-Also you can build an Mobile app or even a .Net Core console app see the example in [CoreExample](\CoreExample\Readme.md) which walks you through the process including developing a mobile app + console app.
+Also you can build an Mobile app or even a .Net Core console app see the example in [CoreExample](https://github.com/leestott/Building-Microsoft-Custom-Vision-AI-Model-and-Apps/tree/master/CoreExample) which walks you through the process including developing a mobile app + console app.
