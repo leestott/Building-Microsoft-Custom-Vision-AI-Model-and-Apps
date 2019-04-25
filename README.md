@@ -133,8 +133,6 @@ Then, open the Program.cs in your favourite editor I have provided a sample in t
 
 ![ExportModel](/CoreExample/Images/Export.PNG)
 
-
-
 To run Program.CS simply ensure the file is saved open a command window Win+R type in command  in the program.cs root folder and run the following command.
 
 ```
