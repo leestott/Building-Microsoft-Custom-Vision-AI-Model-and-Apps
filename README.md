@@ -131,7 +131,7 @@ dotnet new console --name MyAppName
 ```
 Then, open the Program.cs in your favourite editor I have provided a sample in this repo. There are two placeholders for your prediction URL and prediction key. You get the latter when you open the model in Custom Vision and click on the little World icon labelled predication Key. You will need the predication Key URL and Predicition Key and simply replace these in the program.cs file.
 
-![ExportModel](/CoreExample/Images/Export.PNG) 
+![ExportModel](/CoreExample/Images/Export.PNG)
 
 
 
@@ -142,7 +142,7 @@ dotnet run
 ```
 
 This will load the app and ask you for a image file path
-![Dotnet Core](Images/dotnetrun.PNG)
+![Dotnet Core](/CoreExample/Images/dotnetrun.PNG)
 
 #Task 5. Testing your .NET Core application output using Jsonlint.com 
 
