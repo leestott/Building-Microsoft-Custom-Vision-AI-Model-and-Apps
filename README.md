@@ -129,11 +129,11 @@ Setting up .NETCode make sure you're environment is setup by following the instr
 ```
 dotnet new console --name MyAppName
 ```
-Then, open the Program.cs in your favourite editor I have provided a sample in this repo. There are two placeholders for your prediction URL and prediction key. You get the latter when you open the model in Custom Vision and click on the little World icon labelled predication Key. You will need the predication Key URL and Predicition Key and simply replace these in the program.cs file.
+Then, open the [Program.CS](/CoreExample/Program.cs) in your favourite editor I have provided a sample in this repo. There are two placeholders for your prediction URL and prediction key. You get the latter when you open the model in Custom Vision and click on the little World icon labelled predication Key. You will need the predication Key URL and Predicition Key and simply replace these in the program.cs file.
 
 ![ExportModel](/CoreExample/Images/Export.PNG)
 
-To run Program.CS simply ensure the file is saved open a command window Win+R type in command  in the program.cs root folder and run the following command.
+To run [Program.CS](/CoreExample/Program.cs) simply ensure the file is saved open a command window Win+R type in command  in the program.cs root folder and run the following command.
 
 ```
 dotnet run
