@@ -166,9 +166,11 @@ This will render the following results which are better to read
 
 As you can see in this example the probability is 0.513 so this is 51% accurate
 
-# Additiinal Tasks - Building a TensorFlow Light Model .NetCore App
+# Additional Tasks - Building a TensorFlow Light Model .NetCore App
 
-Cross platform CLI to run a pre-trained model exported from [CustomVision.ai](https://CustomVision.ai) in the Tensorflow format for image classification using the [TensorFlowSharp library](https://github.com/migueldeicaza/TensorFlowSharp).
+With the mobile devices you can now build a cross platform mobile app to to run a pre-trained model OFFLINE - You can export either an ONXX Model or TensorFlow Lite Model from [CustomVision.ai](https://CustomVision.ai) 
+
+You can try to export a Tensorflow model for image classification using the [TensorFlowSharp library](https://github.com/migueldeicaza/TensorFlowSharp).
 
 To learn more about Microsoft Cognitive Custom Vision Service, please see here: https://azure.microsoft.com/en-gb/services/cognitive-services/custom-vision-service/
 
