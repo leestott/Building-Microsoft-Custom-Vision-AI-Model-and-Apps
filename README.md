@@ -119,7 +119,57 @@ Tag: Hotdog Probability: 4.059012E-08
 Done.
 Total time: 00:00:06.7100040
 ```
-# Task 4. Building a TensorFlow Light Model .NetCore App
+
+# Task 4. Building a simple .NETCore Application 
+
+Your model may be evolving constantly, etc. There is a prediction API available and exposed from the service as well meaning that for each model you build, you can also get an API endpoint to which you can send either an image URL or the image itself, and get back a prediction.
+
+Setting up .NETCode make sure you're environment is setup by following the instructions here. Next, launch a terminal and create a new Console app and run
+
+```
+dotnet new console --name MyAppName
+```
+Then, open the Program.cs in your favourite editor I have provided a sample in this repo. There are two placeholders for your prediction URL and prediction key. You get the latter when you open the model in Custom Vision and click on the little World icon labelled predication Key.
+
+![ExportModel](/CoreExample/Images/Export.PNG)
+
+
+You then need to open the Settings tab in the upper right corner and get the Subscription key. Once that's updated in the code, you can build and run it, either from Visual Studio Code, or from the terminal.
+
+To run Program.CS simply open a command window in the program.cs root folder and run 
+
+```
+dotnet run
+```
+
+This will load the app and ask you for a image file path
+![Dotnet Core](Images/dotnetrun.PNG)
+
+#Task 5. Testing your .NET Core application output using Jsonlint.com 
+
+To view the formatted JSON simply copy and paste the output into https://jsonlint.com/
+
+```
+{"id":"864df9c1-ee88-4c32-a4f5-f8fa1c518f7a","project":"b4ea1c04-dd50-41d0-a4c1-6df74a3a54a9","iteration":"c7a4e1de-752c-4e08-8f7e-af697c14cc22","created":"2019-04-18T13:46:29.829Z","predictions":[{"probability":0.5133471,"tagId":"5321c2f6-efa8-415e-b572-3c50eaa2543b","tagName":"7"},{"probability":0.1453804,"tagId":"631870ff-7d52-4adc-81db-736551af4f2e","tagName":"3"},{"probability":0.11937803,"tagId":"fbe4c390-7457-428f-938f-27f91a1e909d","tagName":"9"},{"probability":0.08579584,"tagId":"59f96a1a-76b0-4022-b6af-d177954dde51","tagName":"4"},{"probability":0.07935606,"tagId":"f1bf9013-7029-41fc-83cb-6cb1d18c38b0","tagName":"2"},{"probability":0.06724764,"tagId":"f4498068-490d-4bc5-87de-73ca91a2a27e","tagName":"6"},{"probability":0.0451031923,"tagId":"42e76dc6-ae4c-4c2f-bad5-34b71f0a1dec","tagName":"8"},{"probability":0.0009882526,"tagId":"d34791ed-f99d-4bac-bf12-00e213aa3aab","tagName":"5"},{"probability":0.0006828679,"tagId":"ccb2497b-00aa-4bbb-bc5a-1aad311018c0","tagName":"1"},{"probability":0.0005408682,"tagId":"501e2cca-5bb2-4e08-b6c8-5d78e1c52f87","tagName":"0"}]}
+{
+```
+
+This will render the following results which are better to read 
+
+```
+	"id": "864df9c1-ee88-4c32-a4f5-f8fa1c518f7a",
+	"project": "b4ea1c04-dd50-41d0-a4c1-6df74a3a54a9",
+	"iteration": "c7a4e1de-752c-4e08-8f7e-af697c14cc22",
+	"created": "2019-04-18T13:46:29.829Z",
+	"predictions": [{
+		"probability": 0.5133471,
+		"tagId": "5321c2f6-efa8-415e-b572-3c50eaa2543b",
+		"tagName": "7"
+```
+
+As you can see in this example the probability is 0.513 so this is 51% accurate
+
+# Additiinal Tasks - Building a TensorFlow Light Model .NetCore App
 
 Cross platform CLI to run a pre-trained model exported from [CustomVision.ai](https://CustomVision.ai) in the Tensorflow format for image classification using the [TensorFlowSharp library](https://github.com/migueldeicaza/TensorFlowSharp).
 
@@ -127,7 +177,7 @@ To learn more about Microsoft Cognitive Custom Vision Service, please see here: 
 
 For a demo see [CustomVision-Tensorflow-CSharp-Master](/CustomVision-TensorFlow-CSharp-master/Readme.md)
 
-# Task 5. Putting this all together
+# Putting this all together
 
 Create a Custom Vision classifer in 30 seconds starting from nothing.  Using both of these CLI's together, you can quickly experiment with Custom Vision for anything.  Here, in this demo, the goal is to create a Custom Vision Model that can determine images of cucumbers from courgettes.  I start from scratch, first downloading images from Bing using the Bing API of courgettes and then cucumbers.  These are stored in local folders, using the search term as the folder name (comma separated - which can be tweaked after if required).  Then, a Custom Vision model is created named "CucumberOrCourgette", and the parent folder of all the images is provided.  Within the Custom Vision model, labels are created for each search term that was used (cucumber, courgette, green, vegetable).  As each folder of images is uploaded, the appropriate tags are added to each image.  The Custom Vision model is then trained and the default iteration is set. Finally, the model is tested by providing an unseen image to classify.
 
