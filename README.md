@@ -134,7 +134,6 @@ Then, open the Program.cs in your favourite editor I have provided a sample in t
 ![ExportModel](/CoreExample/Images/Export.PNG)
 
 
-You then need to open the Settings tab in the upper right corner and get the Subscription key. Once that's updated in the code, you can build and run it, either from Visual Studio Code, or from the terminal.
 
 To run Program.CS simply open a command window in the program.cs root folder and run 
 
