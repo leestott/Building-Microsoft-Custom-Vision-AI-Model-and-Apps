@@ -129,7 +129,19 @@ Setting up .NETCode make sure you're environment is setup by following the instr
 ```
 dotnet new console --name MyAppName
 ```
-Then, open the [Program.CS](/CoreExample/Program.cs) in your favourite editor I have provided a sample in this repo. There are two placeholders for your prediction URL and prediction key. You get the latter when you open the model in Custom Vision and click on the little World icon labelled predication Key. You will need the predication Key URL and Predicition Key and simply replace these in the program.cs file.
+
+Then, open the [Program.CS](/CoreExample/Program.cs) in your favourite editor I have provided a sample in this repo. There are two placeholders for your prediction URL and prediction key. 
+
+First you must publish your predication endpoint.
+To this simply login to [CustomVisionAI](http://www.customvision.ai) 
+
+- Select your project 
+- Select Performance
+- Click the Publish button
+
+![Publish](/Images/publish.jpg)
+
+Next step is we need the prediction url and key for this model, you get this when you open the model in CustomVision.ai and click on the little World icon labelled predication url. You will need the predication Key URL and Predicition Key and simply replace these in the program.cs file.
 
 ![ExportModel](/CoreExample/Images/Export.PNG)
 
