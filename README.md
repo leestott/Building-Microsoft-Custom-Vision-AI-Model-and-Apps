@@ -33,7 +33,14 @@ Select the following
 - Tick the I confirm check box
 - Click the create button
 
-This will now create the necessary resource
+This will now create the necessary resources within your Azure subscription
+
+Once the resource are created you will be presented with this screen
+
+![BingResource](/Images/Bingresource.JPG)
+
+Select go to resource
+
 
 ### Bing Image Search API Results - Image Downloader
 
