@@ -39,8 +39,13 @@ Once the resource are created you will be presented with this screen
 
 ![BingResource](/Images/BingResource.JPG)
 
+Now we simply need the key for the Bing Image Search
+
 Select go to resource
 
+![BingKey](/Images/BingKey.JPG)
+
+Simply now select keys 
 
 ### Bing Image Search API Results - Image Downloader
 
