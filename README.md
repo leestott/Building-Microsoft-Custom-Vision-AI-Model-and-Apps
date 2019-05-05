@@ -31,6 +31,9 @@ Select the following
 - Pricing = F0
 - Create a new resource group or select existing
 - Tick the I confirm check box
+- Click the create button
+
+This will now create the necessary resource
 
 ### Bing Image Search API Results - Image Downloader
 
