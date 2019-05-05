@@ -130,7 +130,15 @@ Setting up .NETCode make sure you're environment is setup by following the instr
 dotnet new console --name MyAppName
 ```
 
-Then, open the [Program.CS](/CoreExample/Program.cs) in your favourite editor I have provided a sample in this repo. There are two placeholders for your prediction URL and prediction key. 
+Then, open the [Program.CS](/CoreExample/Program.cs) in your favourite editor I have provided a sample in this repo. There are two placeholders ****** for your prediction URL and prediction key.
+
+```
+            // Request headers - replace the ******** with your valid subscription key.
+            client.DefaultRequestHeaders.Add("Prediction-Key", "**************");
+
+            // Prediction URL - replace this example URL with your valid prediction URL. URL should be in the following format
+            string url = "https://southcentralus.api.cognitive.microsoft.com/*******************";
+```
 
 First you must publish your predication endpoint.
 To this simply login to [CustomVisionAI](http://www.customvision.ai) 
@@ -141,7 +149,7 @@ To this simply login to [CustomVisionAI](http://www.customvision.ai)
 
 ![Publish](/Images/publish.jpg)
 
-Next step is we need the prediction url and key for this model, you get this when you open the model in CustomVision.ai and click on the little World icon labelled predication url. You will need the predication Key URL and Predicition Key and simply replace these in the program.cs file.
+Next step is we need the prediction url and key for this model, you get this when you open the model in CustomVision.ai and click on the little World icon labelled predication url. You will need the predication Key endpoint URL and Predicition Key and simply replace these in the program.cs file.
 
 ![ExportModel](/CoreExample/Images/Export.PNG)
 
@@ -154,7 +162,7 @@ dotnet run
 This will load the app and ask you for a image file path
 ![Dotnet Core](/CoreExample/Images/dotnetrun.PNG)
 
-#Task 5. Testing your .NET Core application output using Jsonlint.com 
+#Task 5. Testing your .NET Core application output using Jsonlint.com
 
 To view the formatted JSON simply copy and paste the output into https://jsonlint.com/
 
