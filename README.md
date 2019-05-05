@@ -147,7 +147,7 @@ To this simply login to [CustomVisionAI](http://www.customvision.ai)
 - Select Performance
 - Click the Publish button
 
-![Publish](/Images/publish.jpg)
+![Publish](/Images/Publish.jpg)
 
 Next step is we need the prediction url and key for this model, you get this when you open the model in CustomVision.ai and click on the little World icon labelled predication url. You will need the predication Key endpoint URL and Predicition Key and simply replace these in the program.cs file.
 
