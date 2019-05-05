@@ -45,7 +45,7 @@ Select go to resource
 
 ![BingKey](/Images/BingKey.JPG)
 
-Simply now select keys 
+Simply now select keys you will need the Key 1 for the next step.
 
 ### Bing Image Search API Results - Image Downloader
 
