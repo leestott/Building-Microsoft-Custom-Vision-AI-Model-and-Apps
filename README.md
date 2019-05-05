@@ -17,9 +17,31 @@ You will first need to create a Bing Image API Key. To retrieve or create your B
 
 To use we simply provide the arguments for the Bing Search criteria and Bing Search API key eg:
 
-- BingImageCLI.exe -k yourkey -s _"Search topic"_ -l ShareCommercially -p _file location_ -m 50 -fmax 4000000
+```
+BingImageCLI.exe -k yourkey -s _"Search topic"_ -l ShareCommercially -p _file location_ -m 50 -fmax 4000000
+```
 
-Here an example of downloading a set of images related to mushroom varieties
+Here an example of downloading a set of images related to mushroom varieties for any CustomVision project you will need at least two sets of images to the evaluation each set should be downloaded to different images folder file location. 
+
+Example1
+
+Download two set of images to compare Flys vs Wasps
+
+```
+BingImageCLI.exe -k yourkey -s _"Fly"_ -l ShareCommercially -p c:\flyvswasp\images -m 50 -fmax 4000000
+```
+
+This creates a folder in the location c:\flyvswasp\images\fly and has 50 images of a max of 4mb per image of freely available images of fly's
+
+```
+BingImageCLI.exe -k yourkey -s _"wasp"_ -l ShareCommercially -p c:\flyvswasp\images -m 50 -fmax 4000000
+```
+
+This creates a folder in the location c:\flyvswasp\images\wasp and has 50 images of a max of 4mb per image of freely available images of wasp's
+
+Example 2
+
+This will download over 200 images (some may fail with 403/404s)to the c:\photos\mushroom folder each within their own subfolder of category.
 
 ```
 BingImageCLI.exe -k yourkey -s "Coprinopsis atramentaria" -l ShareCommercially -p c:\photos\mushroom -m 50 -fmax 4000000
@@ -28,9 +50,6 @@ BingImageCLI.exe -k yourkey -s "Lycoperdon perlatum" -l ShareCommercially -p c:\
 BingImageCLI.exe -k yourkey -s "Psilocybe cubensis, magic" -l ShareCommercially -p c:\photos\mushroom -m 50 -fmax 4000000
 BingImageCLI.exe -k yourkey -s "Agaricus bisporus" -l ShareCommercially -p c:\photos\mushroom -m 50 -fmax 4000000
 ```
-
-This will download over 200 images (some may fail with 403/404s) to the c:\photos\mushroom folder each within their own subfolder of category.
-
 
 For a more details on the CLI see [BingImageCLI](/BingImageCLI/)
 
@@ -49,7 +68,9 @@ Custom Vision API Key. To retrieve your [Custom Vision API key start here](https
 
 To use we simply provide the arguments for the Custom Vision API eg:
 
-- CustomVisionCLI.exe -k _yourkey_ -p _file location_ -n _customvisionName_
+```
+CustomVisionCLI.exe -k _yourkey_ -p _file location_ -n _customvisionName_
+```
 
 Example
 
@@ -107,8 +128,9 @@ CustomVisionCLI.exe -k _yourkey_ -p _imagetestlocation_" -n _customvisionName_ -
 
 Example
 
+```
 CustomVisionCLI.exe -k yourkey -p "c:\dump\unseen\mushroom.jpg" -n Mushroom -q
-
+```
 Example output
 
 ```
