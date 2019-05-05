@@ -13,7 +13,7 @@ So one of the most time consuming tasks is to find suitable images upload the su
 For more details on usage see [Bing Image CLI](BingImageCLI/Readme.md)
 You will first need to create a Bing Image API Key. To retrieve or create your Bing Image API key start here: [Bing Image API](https://azure.microsoft.com/en-gb/try/cognitive-services/?api=bing-image-search-api) 
 
-![BingAPI](/Images/BingAPI.jpg)
+![BingAPI](/Images/BingAPI.JPG)
 
 Simply click on the Get API Key this will then will prompt you to sign into Azure Please ensure you have an [Azure for Student Subscription](http://aka.ms/azure4student)
 
@@ -37,7 +37,7 @@ This will now create the necessary resources within your Azure subscription
 
 Once the resource are created you will be presented with this screen
 
-![BingResource](/Images/Bingresource.JPG)
+![BingResource](/Images/BingResource.JPG)
 
 Select go to resource
 
