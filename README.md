@@ -23,7 +23,7 @@ Select sign into existing Azure Account
 
 This will now load the Azure Portal where you can create your new key.
 
-![BingIm](/Images/BingIm.JPG)
+![BingIm](/Images/BingIm.jpg)
 
 Select the following
 
