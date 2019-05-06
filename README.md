@@ -4,6 +4,8 @@ So you want to build a image classifer for a hackathon or project well there too
 
 You can read more and see a variety of demos at [docs.microsoft](https://docs.microsoft.com/en-us/azure/cognitive-services/custom-vision-service/)
 
+- Build Demo See folder on the desktop TrainCustomImage here is a zip folder of the contents [ZipFolder of Build Demo Contents](/TrainCustomImage.zip) a pre-requirement is [DotNetCore v2](https://dotnet.microsoft.com/download/thank-you/dotnet-sdk-2.1.4-windows-x64-installer) to be installed on the computer to run the CLI applications.
+
 # Task 1. Grab some images
 
 So one of the most time consuming tasks is to find suitable images upload the suitable images and tag the images so that they are classified.
