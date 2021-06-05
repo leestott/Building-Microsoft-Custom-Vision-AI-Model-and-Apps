@@ -2,9 +2,9 @@
 
 So you want to build a image classifer for a hackathon or project well there tools such as [Microsoft Custom Vision AI](http://www.customvision.ai) but to make these effective you need to upload and tag images for the model to be successfully trained. Using Bing Image CLI you can download the images directly to your local machine, then add or remove any other images to fine tune your image stock.  Then you can use the Custom Vision Model CLI to create a new model, upload the images and correctly label each one.  Further more, the model is trained and then made available for running quick tests - to see if you're classifer is returning the expected results.
 
-You can read more and see a variety of demos at [docs.microsoft](https://docs.microsoft.com/en-us/azure/cognitive-services/custom-vision-service/)
+You can read more and see a variety of demos at [docs.microsoft](https://docs.microsoft.com/azure/cognitive-services/custom-vision-service/?WT.mc_id=academic-0000-leestott)
 
-- Build Demo See folder on the desktop TrainCustomImage here is a zip folder of the contents [ZipFolder of Build Demo Contents](/TrainCustomImage.zip) a pre-requirement is [DotNetCore v2](https://dotnet.microsoft.com/download/thank-you/dotnet-sdk-2.1.4-windows-x64-installer) to be installed on the computer to run the CLI applications.
+- Build Demo See folder on the desktop TrainCustomImage here is a zip folder of the contents [ZipFolder of Build Demo Contents](/TrainCustomImage.zip) a pre-requirement is [DotNetCore v2](https://dotnet.microsoft.com/download/thank-you/dotnet-sdk-2.1.4-windows-x64-installer?WT.mc_id=academic-0000-leestott) to be installed on the computer to run the CLI applications.
 
 # Task 1. Grab some images
 
@@ -13,7 +13,7 @@ So one of the most time consuming tasks is to find suitable images upload the su
 ### Bing Image CLI
 
 For more details on usage see [Bing Image CLI](BingImageCLI/Readme.md)
-You will first need to create a Bing Image API Key. To retrieve or create your Bing Image API key start here: [Bing Image API](https://azure.microsoft.com/en-gb/try/cognitive-services/?api=bing-image-search-api) 
+You will first need to create a Bing Image API Key. To retrieve or create your Bing Image API key start here: [Bing Image API](https://azure.microsoft.com/try/cognitive-services/?api=bing-image-search-api&WT.mc_id=academic-0000-leestott) 
 
 ![BingAPI](/Images/BingAPI.JPG)
 
@@ -100,7 +100,7 @@ You'll want to quickly scan through all the downloaded images, deleting any rogu
 Cross platform CLI to provision a new Microsoft Custom Vision model using images stored on your local machine.
 
 For more details on usage see [Custom Vision CLI](CustomVisionCLI/Readme.md). You will need to first create a CustomVision API Key 
-Custom Vision API Key. To retrieve your [Custom Vision API key start here](https://azure.microsoft.com/en-gb/try/cognitive-services/)
+Custom Vision API Key. To retrieve your [Custom Vision API key start here](https://azure.microsoft.com/try/cognitive-services/?WT.mc_id=academic-0000-leestott)
 
 To use we simply provide the arguments for the Custom Vision API eg:
 
@@ -259,7 +259,7 @@ With the mobile devices you can now build a cross platform mobile app to to run 
 
 You can try to export a Tensorflow model for image classification using the [TensorFlowSharp library](https://github.com/migueldeicaza/TensorFlowSharp).
 
-To learn more about Microsoft Cognitive Custom Vision Service, please see here: https://azure.microsoft.com/en-gb/services/cognitive-services/custom-vision-service/
+To learn more about Microsoft Cognitive Custom Vision Service, please see here: https://azure.microsoft.com/services/cognitive-services/custom-vision-service/?WT.mc_id=academic-0000-leestott
 
 For a demo see [CustomVision-Tensorflow-CSharp-Master](/CustomVision-TensorFlow-CSharp-master/Readme.md)
 
